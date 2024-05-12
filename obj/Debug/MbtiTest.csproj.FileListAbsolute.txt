@@ -1,0 +1,10 @@
+C:\Users\admin\source\repos\MbtiTest\obj\Debug\MbtiTest.csproj.AssemblyReference.cache
+C:\Users\admin\source\repos\MbtiTest\obj\Debug\MbtiTest.Form1.resources
+C:\Users\admin\source\repos\MbtiTest\obj\Debug\MbtiTest.Properties.Resources.resources
+C:\Users\admin\source\repos\MbtiTest\obj\Debug\MbtiTest.csproj.GenerateResource.cache
+C:\Users\admin\source\repos\MbtiTest\obj\Debug\MbtiTest.csproj.CoreCompileInputs.cache
+C:\Users\admin\source\repos\MbtiTest\bin\Debug\MbtiTest.exe.config
+C:\Users\admin\source\repos\MbtiTest\bin\Debug\MbtiTest.exe
+C:\Users\admin\source\repos\MbtiTest\bin\Debug\MbtiTest.pdb
+C:\Users\admin\source\repos\MbtiTest\obj\Debug\MbtiTest.exe
+C:\Users\admin\source\repos\MbtiTest\obj\Debug\MbtiTest.pdb
