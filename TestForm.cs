@@ -12,7 +12,7 @@ using System.Windows.Forms;
 
 namespace MbtiTest
 {
-    public partial class Form1 : Form
+    public partial class testForm : Form
     {
         QuestionBlock[] QuestionBlocks = new QuestionBlock[]
                         {
@@ -45,17 +45,14 @@ namespace MbtiTest
                         };
 
         private int currentQuestion = 0;
-        public Form1()
+        public testForm()
         {
             InitializeComponent();
             ChangeQuestion();
-
-
-
         }
         public void ChangeQuestion()
         {
-            
+
             QuestionBlock block = QuestionBlocks[0];
             Question[] questions = block.GetQuestions();
             questionTextLabel.Text = questions[currentQuestion].GetText();
@@ -88,9 +85,6 @@ namespace MbtiTest
             currentQuestion--;
             ChangeQuestion();
         }
-        private void LoadQuestion() 
-        {
 
-        }
     }
 }
