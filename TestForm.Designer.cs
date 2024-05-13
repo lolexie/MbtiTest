@@ -1,6 +1,6 @@
 ﻿namespace MbtiTest
 {
-    partial class testForm
+    partial class TestForm
     {
         /// <summary>
         /// Обязательная переменная конструктора.
@@ -177,7 +177,7 @@
             this.fifthAnswerRadio.TabStop = true;
             this.fifthAnswerRadio.UseVisualStyleBackColor = true;
             // 
-            // testForm
+            // TestForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -196,7 +196,7 @@
             this.Controls.Add(this.firstAnswerLabel);
             this.Controls.Add(this.questionTextLabel);
             this.Controls.Add(this.questionNumberLabel);
-            this.Name = "testForm";
+            this.Name = "TestForm";
             this.Text = "TestForm";
             this.ResumeLayout(false);
             this.PerformLayout();

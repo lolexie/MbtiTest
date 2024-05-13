@@ -1,19 +1,13 @@
-﻿using MbtiTest;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Security.Cryptography.X509Certificates;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace MbtiTest
 {
-    public partial class testForm : Form
+    public partial class TestForm : Form
     {
+        int[] answers = new int[20];
         QuestionBlock[] QuestionBlocks = new QuestionBlock[]
                         {
                 new QuestionBlock(
@@ -43,18 +37,21 @@ namespace MbtiTest
                     }
                 ),
                         };
-
+        QuestionBlock block;
+        Question[] questions;
         private int currentQuestion = 0;
-        public testForm()
+
+        public TestForm()
         {
             InitializeComponent();
             ChangeQuestion();
         }
+
         public void ChangeQuestion()
         {
-
-            QuestionBlock block = QuestionBlocks[0];
-            Question[] questions = block.GetQuestions();
+            UncheckRadio();
+            block = QuestionBlocks[0];
+            questions = block.GetQuestions();
             questionTextLabel.Text = questions[currentQuestion].GetText();
             questionNumberLabel.Text = (currentQuestion + 1).ToString();
             firstAnswerLabel.Text = questions[currentQuestion].GetAnswers()[0];
@@ -62,6 +59,62 @@ namespace MbtiTest
             thirdAnswerLabel.Text = questions[currentQuestion].GetAnswers()[2];
             fourthAnswerLabel.Text = questions[currentQuestion].GetAnswers()[3];
             fifthAnswerLabel.Text = questions[currentQuestion].GetAnswers()[4];
+
+            CheckRadio();
+            UpdatePaginationButtons();
+        }
+
+        private void nextButton_Click(object sender, EventArgs e)
+        {
+            answers[currentQuestion] = GetChosenAnswerNumber();
+            currentQuestion++;
+            ChangeQuestion();
+        }
+
+        private void previousButton_Click(object sender, EventArgs e)
+        {
+            currentQuestion--;
+            ChangeQuestion();
+
+        }
+
+        private int GetChosenAnswerNumber()
+        {
+            if (firstAnswerRadio.Checked)
+                return 1;
+            if (secondAnswerRadio.Checked)
+                return 2;
+            if (thirdAnswerRadio.Checked)
+                return 3;
+            if (fourthAnswerRadio.Checked)
+                return 4;
+            if (fifthAnswerRadio.Checked)
+                return 5;
+            return -1;
+        }
+
+        private void UncheckRadio()
+        {
+            foreach (RadioButton radio in Controls.OfType<RadioButton>())
+            {
+                radio.Checked = false;
+            }
+        }
+
+        private void CheckRadio()
+        {
+            switch (answers[currentQuestion])
+            {
+                case 1: firstAnswerRadio.Checked = true; break;
+                case 2: secondAnswerRadio.Checked = true; break;
+                case 3: thirdAnswerRadio.Checked = true; break;
+                case 4: fourthAnswerRadio.Checked = true; break;
+                case 5: fifthAnswerRadio.Checked = true; break;
+            }
+        }
+
+        private void UpdatePaginationButtons()
+        {
             if (currentQuestion == 0)
             {
                 previousButton.Enabled = false;
@@ -73,18 +126,5 @@ namespace MbtiTest
             }
             else nextButton.Enabled = true;
         }
-
-        private void nextButton_Click(object sender, EventArgs e)
-        {
-            currentQuestion++;
-            ChangeQuestion();
-        }
-
-        private void previousButton_Click(object sender, EventArgs e)
-        {
-            currentQuestion--;
-            ChangeQuestion();
-        }
-
     }
 }
