@@ -1,16 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace MbtiTest
 {
-    internal class QuestionBlock
+    public class QuestionBlock
     {
         private Dictionary<string, string> _profileTypes;
         private Question[] _questions;
-        private int _score = 0;
+        private int[] _answers = new int[5];
 
         public QuestionBlock(Dictionary<string, string> profileTypes, Question[] questions)
         {
@@ -18,24 +15,23 @@ namespace MbtiTest
             _questions = questions;
         }
 
-        public void UpdateScore(int score)
+        public KeyValuePair<string, string> GetProfileType()
         {
-            _score += score;
+            int firstLetter = _answers.Count(ans => ans <= 2);
+            int secondLetter = _answers.Count(ans => ans >= 3);
+            if (firstLetter > secondLetter)
+            {
+                return _profileTypes.First();
+            }
+            else return _profileTypes.Last();
         }
 
-        public string GetProfileType()
+        public void PushAnswer(int answer, int index)
         {
-            if (_score < 10)
-            {
-                return _profileTypes.First().Key;
-            }
-            else
-            {
-                return _profileTypes.Last().Key;
-            }
+            _answers[index] = answer;
         }
 
-        public int GetScore() { return _score; }
+        public int[] GetAnswers() { return _answers; }
         public Question[] GetQuestions() { return _questions; }
         public Dictionary<string, string> GetProfileTypes() { return _profileTypes; }
     }
