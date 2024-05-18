@@ -7,7 +7,6 @@ namespace MbtiTest
 {
     public partial class TestForm : Form
     {
-        int[] answers = new int[20];
         QuestionBlock[] questionBlocks = new QuestionBlock[]
                         {
                 new QuestionBlock(
@@ -120,6 +119,11 @@ namespace MbtiTest
 
         private void previousButton_Click(object sender, EventArgs e)
         {
+            if (currentQuestion == 0)
+            {
+                currentBlock--;
+                currentQuestion = questionBlocks[currentBlock].GetQuestions().Length - 1;
+            }
             currentQuestion--;
             ChangeQuestion();
         }
@@ -147,7 +151,7 @@ namespace MbtiTest
 
         private void CheckBox()
         {
-            switch (answers[currentQuestion])
+            switch (questionBlocks[currentBlock].GetAnswers()[currentQuestion])
             {
                 case 1: firstAnswerCheckBox.Checked = true; break;
                 case 2: secondAnswerCheckBox.Checked = true; break;
