@@ -119,38 +119,42 @@
             // firstAnswerCheckBox
             // 
             this.firstAnswerCheckBox.AutoSize = true;
-            this.firstAnswerCheckBox.Location = new System.Drawing.Point(439, 142);
+            this.firstAnswerCheckBox.Location = new System.Drawing.Point(669, 151);
             this.firstAnswerCheckBox.Name = "firstAnswerCheckBox";
             this.firstAnswerCheckBox.Size = new System.Drawing.Size(18, 17);
             this.firstAnswerCheckBox.TabIndex = 14;
             this.firstAnswerCheckBox.UseVisualStyleBackColor = true;
+            this.firstAnswerCheckBox.Click += new System.EventHandler(this.CheckBoxClick);
             // 
             // secondAnswerCheckBox
             // 
             this.secondAnswerCheckBox.AutoSize = true;
-            this.secondAnswerCheckBox.Location = new System.Drawing.Point(439, 187);
+            this.secondAnswerCheckBox.Location = new System.Drawing.Point(669, 196);
             this.secondAnswerCheckBox.Name = "secondAnswerCheckBox";
             this.secondAnswerCheckBox.Size = new System.Drawing.Size(18, 17);
             this.secondAnswerCheckBox.TabIndex = 15;
             this.secondAnswerCheckBox.UseVisualStyleBackColor = true;
+            this.secondAnswerCheckBox.Click += new System.EventHandler(this.CheckBoxClick);
             // 
             // thirdAnswerCheckBox
             // 
             this.thirdAnswerCheckBox.AutoSize = true;
-            this.thirdAnswerCheckBox.Location = new System.Drawing.Point(439, 231);
+            this.thirdAnswerCheckBox.Location = new System.Drawing.Point(669, 240);
             this.thirdAnswerCheckBox.Name = "thirdAnswerCheckBox";
             this.thirdAnswerCheckBox.Size = new System.Drawing.Size(18, 17);
             this.thirdAnswerCheckBox.TabIndex = 16;
             this.thirdAnswerCheckBox.UseVisualStyleBackColor = true;
+            this.thirdAnswerCheckBox.Click += new System.EventHandler(this.CheckBoxClick);
             // 
             // fourthAnswerCheckBox
             // 
             this.fourthAnswerCheckBox.AutoSize = true;
-            this.fourthAnswerCheckBox.Location = new System.Drawing.Point(439, 275);
+            this.fourthAnswerCheckBox.Location = new System.Drawing.Point(669, 284);
             this.fourthAnswerCheckBox.Name = "fourthAnswerCheckBox";
             this.fourthAnswerCheckBox.Size = new System.Drawing.Size(18, 17);
             this.fourthAnswerCheckBox.TabIndex = 17;
             this.fourthAnswerCheckBox.UseVisualStyleBackColor = true;
+            this.fourthAnswerCheckBox.Click += new System.EventHandler(this.CheckBoxClick);
             // 
             // TestForm
             // 
