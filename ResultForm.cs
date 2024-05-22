@@ -15,8 +15,8 @@ namespace MbtiTest
         private void ResultForm_Load(object sender, EventArgs e)
         {
             label1.Text = GetAbreviature();
+            label2.Text = PsychotypeDescription.GetDescription(GetAbreviature());
         }
-
         private string GetAbreviature()
         {
             string abr = "";
@@ -26,5 +26,6 @@ namespace MbtiTest
             }
             return abr;
         }
+
     }
 }

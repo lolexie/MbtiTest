@@ -53,10 +53,9 @@
             // 
             // questionTextLabel
             // 
-            this.questionTextLabel.AutoSize = true;
-            this.questionTextLabel.Location = new System.Drawing.Point(92, 82);
+            this.questionTextLabel.Location = new System.Drawing.Point(92, 76);
             this.questionTextLabel.Name = "questionTextLabel";
-            this.questionTextLabel.Size = new System.Drawing.Size(89, 16);
+            this.questionTextLabel.Size = new System.Drawing.Size(595, 54);
             this.questionTextLabel.TabIndex = 1;
             this.questionTextLabel.Text = "Question Text";
             // 

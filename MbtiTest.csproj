@@ -46,6 +46,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="InitialForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InitialForm.Designer.cs">
+      <DependentUpon>InitialForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PsychotypeDescription.cs" />
     <Compile Include="TestForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -62,8 +69,12 @@
     <Compile Include="ResultForm.Designer.cs">
       <DependentUpon>ResultForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="InitialForm.resx">
+      <DependentUpon>InitialForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ResultForm.resx">
       <DependentUpon>ResultForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="TestForm.resx">
       <DependentUpon>TestForm.cs</DependentUpon>
