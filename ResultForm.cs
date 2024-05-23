@@ -1,4 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Drawing;
+using System.Linq;
 using System.Windows.Forms;
 
 namespace MbtiTest
@@ -14,8 +17,9 @@ namespace MbtiTest
 
         private void ResultForm_Load(object sender, EventArgs e)
         {
-            label1.Text = GetAbreviature();
-            label2.Text = PsychotypeDescription.GetDescription(GetAbreviature());
+            abbreviatureLabel.Text = GetAbreviature();
+            descriptionLabel.Text = PsychotypeProperties.GetDescription(GetAbreviature());
+            FillColorBoxes();
         }
         private string GetAbreviature()
         {
@@ -26,6 +30,14 @@ namespace MbtiTest
             }
             return abr;
         }
-
+        private void FillColorBoxes()
+        {
+            string[] colors = PsychotypeProperties.GetColors(GetAbreviature());
+            List<PictureBox> colorBoxes = Controls.OfType<PictureBox>().ToList();
+            for(int i = 0; i < colorBoxes.Count; i++)
+            {
+                colorBoxes[i].BackColor = ColorTranslator.FromHtml(colors[i]);  
+            }
+        }
     }
 }
