@@ -29,8 +29,8 @@ namespace MbtiTest
                     },
                     new Question[]{
                         new Question("Чи довіряєте ви більше фактам і конкретним данним, ніж вашій інтуїції?", new string[] {"Ні", "Ближче за всього ні", "Ближче за всього так", "Так"}),
-                        new Question("Чи схильні ви до аналізу деталей і конкретних ситуацій, чи ви дивитесь на більш широкий контекст і можливі зв'язки між різними ідеями?", new string[] {"Ні", "Ближче за всього ні", "Ближче за всього так", "Так"}),
-                        new Question("Чи важливіше для вас планувати крок за кроком, чи ви більше схильні до імпровізації і прийняття змін?", new string[] {"Ні", "Ближче за всього ні", "Ближче за всього так", "Так" }),
+                        new Question("Чи схильні ви до аналізу деталей і конкретних ситуацій, ніж до більш широкий контекст і можливі зв'язки між різними ідеями?", new string[] {"Ні", "Ближче за всього ні", "Ближче за всього так", "Так"}),
+                        new Question("Чи важливіше для вас планувати крок за кроком, ніж ви більше схильні до імпровізації і прийняття змін?", new string[] {"Ні", "Ближче за всього ні", "Ближче за всього так", "Так" }),
                         new Question("Чи частіше ви дієте на основі конкретних даних, ніж ґрунтуєтеся на власних догадках і відчуттях?", new string[] {"Ні", "Ближче за всього ні", "Ближче за всього так", "Так" }),
                         new Question("Чи подобається вам користуватися інструментами організації, такими як розклади та списки?", new string[] {"Ні", "Ближче за всього ні", "Ближче за всього так", "Так" }),
                     }
@@ -86,7 +86,7 @@ namespace MbtiTest
             block = questionBlocks[currentBlock];
             questions = block.GetQuestions();
             questionTextLabel.Text = questions[currentQuestion].GetText();
-            questionNumberLabel.Text = (currentQuestion + 1).ToString();
+            questionNumberLabel.Text = ((currentQuestion + 1) + (currentBlock * 5)).ToString();
             firstAnswerLabel.Text = questions[currentQuestion].GetAnswers()[0];
             secondAnswerLabel.Text = questions[currentQuestion].GetAnswers()[1];
             thirdAnswerLabel.Text = questions[currentQuestion].GetAnswers()[2];
@@ -169,12 +169,12 @@ namespace MbtiTest
             else previousButton.Enabled = true;
             if (currentBlock == questionBlocks.Length - 1 && currentQuestion == questionBlocks[currentBlock].GetQuestions().Length - 1)
             {
-                nextButton.Text = "Finish";
+                nextButton.Text = "Завершення";
                 nextButton.Click += FinishTest;
             }
             else
             {
-                nextButton.Text = "Next";
+                nextButton.Text = "Далі";
                 nextButton.Enabled = true;
             }
         }

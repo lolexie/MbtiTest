@@ -101,7 +101,7 @@
             this.previousButton.Name = "previousButton";
             this.previousButton.Size = new System.Drawing.Size(143, 32);
             this.previousButton.TabIndex = 7;
-            this.previousButton.Text = "Previous";
+            this.previousButton.Text = "Назад";
             this.previousButton.UseVisualStyleBackColor = true;
             this.previousButton.Click += new System.EventHandler(this.previousButton_Click);
             // 
@@ -111,7 +111,7 @@
             this.nextButton.Name = "nextButton";
             this.nextButton.Size = new System.Drawing.Size(140, 31);
             this.nextButton.TabIndex = 8;
-            this.nextButton.Text = "Next";
+            this.nextButton.Text = "Далі";
             this.nextButton.UseVisualStyleBackColor = true;
             this.nextButton.Click += new System.EventHandler(this.nextButton_Click);
             // 

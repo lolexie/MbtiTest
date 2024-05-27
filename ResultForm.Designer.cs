@@ -41,7 +41,7 @@
             // abbreviatureLabel
             // 
             this.abbreviatureLabel.AutoSize = true;
-            this.abbreviatureLabel.Location = new System.Drawing.Point(127, 99);
+            this.abbreviatureLabel.Location = new System.Drawing.Point(130, 73);
             this.abbreviatureLabel.Name = "abbreviatureLabel";
             this.abbreviatureLabel.Size = new System.Drawing.Size(121, 16);
             this.abbreviatureLabel.TabIndex = 0;
@@ -58,27 +58,27 @@
             // colorBox1
             // 
             this.colorBox1.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.colorBox1.Location = new System.Drawing.Point(86, 335);
+            this.colorBox1.Location = new System.Drawing.Point(86, 315);
             this.colorBox1.Name = "colorBox1";
-            this.colorBox1.Size = new System.Drawing.Size(100, 50);
+            this.colorBox1.Size = new System.Drawing.Size(165, 70);
             this.colorBox1.TabIndex = 2;
             this.colorBox1.TabStop = false;
             // 
             // colorBox2
             // 
             this.colorBox2.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.colorBox2.Location = new System.Drawing.Point(353, 334);
+            this.colorBox2.Location = new System.Drawing.Point(549, 315);
             this.colorBox2.Name = "colorBox2";
-            this.colorBox2.Size = new System.Drawing.Size(100, 50);
+            this.colorBox2.Size = new System.Drawing.Size(165, 70);
             this.colorBox2.TabIndex = 3;
             this.colorBox2.TabStop = false;
             // 
             // colorBox3
             // 
             this.colorBox3.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.colorBox3.Location = new System.Drawing.Point(640, 334);
+            this.colorBox3.Location = new System.Drawing.Point(319, 315);
             this.colorBox3.Name = "colorBox3";
-            this.colorBox3.Size = new System.Drawing.Size(100, 50);
+            this.colorBox3.Size = new System.Drawing.Size(165, 70);
             this.colorBox3.TabIndex = 4;
             this.colorBox3.TabStop = false;
             // 
