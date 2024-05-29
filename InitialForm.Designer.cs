@@ -51,6 +51,7 @@
             this.instructionButton.TabIndex = 1;
             this.instructionButton.Text = "Інструкція";
             this.instructionButton.UseVisualStyleBackColor = true;
+            this.instructionButton.Click += new System.EventHandler(this.instructionButton_Click);
             // 
             // catalogButton
             // 

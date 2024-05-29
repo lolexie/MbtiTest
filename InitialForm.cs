@@ -30,5 +30,12 @@ namespace MbtiTest
             CatalogForm catalogForm = new CatalogForm();
             catalogForm.Show();
         }
+
+        private void instructionButton_Click(object sender, EventArgs e)
+        {
+            Hide();
+            InstructionsForm instructionsForm = new InstructionsForm();
+            instructionsForm.Show();
+        }
     }
 }

@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="MbtiTest.CatalogForm">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAACAAAACAAgAAACAAIAAgAAAQAA=</HashCode>
+      <FileName>CatalogForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MbtiTest.InitialForm">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAATAAAAAAAACAAAACAAgAACAAAAAAAAQAAAE=</HashCode>
+      <FileName>InitialForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MbtiTest.ResultForm">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAACAAAAAAQACEAAACAgAAAAAAAAAABAQAAAA=</HashCode>
+      <FileName>ResultForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MbtiTest.TestForm">
+    <Position X="5.75" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>GQQAQAgAACAABBCABCCAQAAChBUDRAAAAAAIAgAARAA=</HashCode>
+      <FileName>TestForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MbtiTest.Program">
+    <Position X="4" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MbtiTest.PsychotypeProperties">
+    <Position X="0.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIAAAAAAAAAAAAACAAgAAAAAAAAA=</HashCode>
+      <FileName>PsychotypeProperties.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MbtiTest.Question">
+    <Position X="2.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAIAAAAACAAAEAAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>Question.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MbtiTest.QuestionBlock">
+    <Position X="8" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAAAAAAAIACAACEBAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>QuestionBlock.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MbtiTest.UndefinedAbbreviatureException">
+    <Position X="10" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UndefinedAbbreviatureException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

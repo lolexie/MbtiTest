@@ -58,6 +58,12 @@
     <Compile Include="InitialForm.Designer.cs">
       <DependentUpon>InitialForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="InstructionsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InstructionsForm.Designer.cs">
+      <DependentUpon>InstructionsForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="PsychotypeProperties.cs" />
     <Compile Include="TestForm.cs">
       <SubType>Form</SubType>
@@ -81,6 +87,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="InitialForm.resx">
       <DependentUpon>InitialForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InstructionsForm.resx">
+      <DependentUpon>InstructionsForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ResultForm.resx">
       <DependentUpon>ResultForm.cs</DependentUpon>
